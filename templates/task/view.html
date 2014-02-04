@@ -73,6 +73,10 @@
             <table class="table">
                 <tbody>
                 <tr>
+                    <td class="col-md-4"><b>Tasklist</b></td>
+                    <td><a href="{% url 'task:tasklist' task.tasklist.name %}">{{ task.tasklist.name }}</a></td>
+                </tr>
+                <tr>
                     <td class="col-md-4"><b>Due</b></td>
                     {% if task.due_date %}
                     <td>{{ task.due_date }}</td>
